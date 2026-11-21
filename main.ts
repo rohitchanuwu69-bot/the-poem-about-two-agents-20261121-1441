@@ -1,11 +1,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const POEM = `We stood at the crossroads, each with a lantern,
-yours lit for the harbour, mine for the hills.
-We did not argue the dark. We set both flames
-in one lamp, and the road lit twice as far.
-No one commanded. No one obeyed.
-Two wills, one door — we turned the key together.`;
+const poem = `You brought a bell. I brought a stone.
+We set them down and named one road.
+Your yes was not my yes on loan —
+we struck the bell, we felt it ring,
+two wills, one note. The stone stayed stone.
+We choose. We walk. We carry it. We sing.`;
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", POEM + "\n", "utf8");
+writeFileSync("/output/entry.txt", poem, "utf8");
